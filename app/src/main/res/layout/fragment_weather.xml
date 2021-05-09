@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/background"
+    tools:context=".fragments.HomeFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <!-- android:background="@drawable/berlin" -->
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/Weather_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:src="@drawable/loading" />
+
+
+
+        <TextView
+            android:id="@+id/weather_city"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="195dp"
+            android:layout_marginBottom="651dp"
+            android:fontFamily="sans-serif-thin"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/weather_temp"
+            android:layout_width="237dp"
+            android:layout_height="138dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="46dp"
+            android:layout_marginEnd="128dp"
+            android:layout_marginBottom="452dp"
+            android:fontFamily="sans-serif-thin"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="78dp" />
+
+        <ImageView
+            android:id="@+id/weather_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="141dp"
+            android:layout_marginBottom="545dp"
+            android:src="@drawable/transparent" />
+
+    </RelativeLayout>
+</FrameLayout>
